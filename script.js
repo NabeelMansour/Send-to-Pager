@@ -22,12 +22,14 @@ function myPlay() {
 
 btnPrimary.addEventListener('click', ()=> {
     phoneDisplay.innerText = ''
+    pagerDisplay.innerText = ''
 })
 
 btnSecondary.addEventListener('click', () => {
-    setTimeout(() => {
+    if (phoneDisplay.innerText >= '0') {
+     setTimeout(() => {
         myPlay()
         pagerDisplay.innerText = phoneDisplay.innerText
-}, 3000);
-    
+    }, 3000);   
+    }
 })

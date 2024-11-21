@@ -76,6 +76,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 1s linear;
+}
+
+.phone__grid__items:hover{
+    background: #949292;
 }
 
 .btn {
