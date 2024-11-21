@@ -15,10 +15,19 @@ document.addEventListener('click', function(e){
     
 })
 
+function myPlay() {
+    const audio = new Audio("./assets/pager.wav");
+    audio.play();
+}
+
 btnPrimary.addEventListener('click', ()=> {
     phoneDisplay.innerText = ''
 })
 
-btnSecondary.addEventListener('click', ()=>{
-    pagerDisplay.innerText = phoneDisplay.innerText
+btnSecondary.addEventListener('click', () => {
+    setTimeout(() => {
+        myPlay()
+        pagerDisplay.innerText = phoneDisplay.innerText
+}, 3000);
+    
 })
