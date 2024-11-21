@@ -17,8 +17,8 @@ body {
 main {
     padding: 3.313rem 3.5rem 3.25rem 3.5rem;
     gap: 7.875rem;
-    width: 49.625rem;
-    /* border: 2px solid; */
+    max-width: 49.625rem;
+    width: 100%;
 }
 
 .pager {
